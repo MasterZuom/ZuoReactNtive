@@ -1,4 +1,6 @@
 import { AppRegistry } from 'react-native';
-import App from './App';
 
-AppRegistry.registerComponent('ZuoProject', () => App);
+import Main from './modules'
+
+
+AppRegistry.registerComponent('ZuoProject', () => Main);

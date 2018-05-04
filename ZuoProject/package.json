@@ -8,7 +8,8 @@
   },
   "dependencies": {
     "react": "16.3.1",
-    "react-native": "0.55.3"
+    "react-native": "0.55.3",
+    "react-native-syan-image-picker": "^0.1.6"
   },
   "devDependencies": {
     "babel-jest": "22.4.3",

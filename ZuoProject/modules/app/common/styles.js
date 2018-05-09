@@ -1,6 +1,3 @@
-/**
- * Created by Enzo on 10/8/2017.
- */
 
 'use strict';
 

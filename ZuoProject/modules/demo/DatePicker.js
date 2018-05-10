@@ -24,7 +24,7 @@ import {
     ImageStore,
     ImageEditor,
     Modal,
-
+    Picker
 } from 'react-native'
 
 import {LoadingModal, AnimateLoadingModal} from '../app/common/components.js'
@@ -47,7 +47,10 @@ class DatePicker extends Component{
 
         this.state={
             isDateTimePickerVisible:false,
-            date:new Date("2012-12-25")
+            selected:' ',
+            dropdown:' ',
+            date:new Date(),
+            sex:'男'
         }
     }
 
@@ -74,11 +77,37 @@ class DatePicker extends Component{
         this.hideDateTimePicker()
     }
 
+    onValueChange(flag,value) {
+        if(flag ==1){
+            this.setState({selected:value});
+        }else{
+            this.setState({dropdown:value});
+        }
+    }
+
     render() {
         return(
             <ScrollView style={userFeedbackStyle.container}>
                 <TouchableOpacity style={{marginTop:40}} onPress={()=>{this.showDateTimePicker()}}>
                     <Text>{this.getDateString(this.state.date)}</Text>
+                </TouchableOpacity>
+                <TouchableOpacity
+                    style={{marginTop:40}}
+                    onPress={()=>{
+                        Alert.alert('请选择您的性别','',
+                            [
+                              {text:'男',onPress: ()=>{
+                                  this.setState({'sex':'男'})
+                              }},
+                              {text:'女',onPress: ()=>{
+                                  this.setState({'sex':'女'})
+                              }},
+                              {text:'取消',onPress: ()=>{}},
+                            ]
+                        )
+                    }}
+                >
+                    <Text>{this.state.sex}</Text>
                 </TouchableOpacity>
                 <DateTimePicker
                     date={this.state.date}
@@ -92,6 +121,53 @@ class DatePicker extends Component{
             </ScrollView>
         )
     }
+}
+
+class CommonModal extends Component {
+    constructor(props) {
+        super(props);
+    }
+
+  render() {
+    return(
+     <Modal
+       animationType = {"none"}
+       transparent = {true}
+       visible = {this.props.isVisible}
+       onRequestClose = {() => {
+          // add this callback to eliminate the yellowbox warning, do nothing now
+        }}
+     >
+        <View style={{flex:1,backgroundColor:'rgba(0,0,0,.4)',justifyContent:'center'}}>
+          <View style={{marginLeft:screenWidth < 375 ? 20 : 30,marginRight:screenWidth < 375 ? 20 : 30,backgroundColor:'#fff',borderRadius:4}}>
+            <View style={{padding:15,paddingTop:20,alignItems:'center'}}>
+              {
+                this.props.title ? <Text style={{color:'#1a1a1a',fontSize:18,fontWeight:'bold',marginBottom:15,lineHeight:20}}>{this.props.title}</Text> : null
+              }
+              {
+                this.props.contents.length > 0 ? this.props.contents.map((item, idx) =>
+                  <Text key={idx} style={{color:'#666',fontSize:14,lineHeight:18,marginLeft:5,marginRight:5}}>{item}</Text>
+                ) : null
+              }
+            </View>
+            <View style={{flexDirection:'row-reverse',paddingBottom:15,paddingLeft:10,paddingRight:10,marginTop:10}}>
+              {
+                this.props.buttons.length > 0 ? this.props.buttons.map((item, idx) =>
+                  item.type === 'confirm' ?
+                  <TouchableOpacity activeOpacity={.8} key={idx} style={{flex:1,height:45,alignItems:'center',justifyContent:'center',borderRadius:4,backgroundColor:'#0492D4',marginLeft:5,marginRight:5}} onPress={() => { this.props.confirmCallback && this.props.confirmCallback() }}>
+                    <Text style={{fontSize:14,color:'#fff'}}>{item.text}</Text>
+                  </TouchableOpacity> :
+                  <TouchableOpacity activeOpacity={.8} key={idx} style={{flex:1,height:45,alignItems:'center',justifyContent:'center',borderRadius:4,borderWidth:1,borderColor:'#e5e5e5',marginLeft:5,marginRight:5}} onPress={() => { this.props.cancelCallback && this.props.cancelCallback() }}>
+                    <Text style={{fontSize:14,color:'#666'}}>{item.text}</Text>
+                  </TouchableOpacity>
+                ) : null
+              }
+            </View>
+          </View>
+        </View>
+     </Modal>
+    )
+  }
 }
 
 const userFeedbackStyle = StyleSheet.create({

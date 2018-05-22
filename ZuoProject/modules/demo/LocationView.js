@@ -28,13 +28,15 @@ import {
 
 import {LoadingModal, AnimateLoadingModal} from '../app/common/components.js'
 import {COLOR_PRIMARY, COLOR_CLICK, globleStyles, settingStyle} from '../app/common/styles.js'
-import SYImagePicker from 'react-native-syan-image-picker'
 
 var screenWidth = Dimensions.get('window').width;
 var screenHeight = Dimensions.get('window').height;
 var dismissKeyboard = require('dismissKeyboard');
 
 const isIPX = DeviceInfo.isIPhoneX_deprecated;
+const bottomTapHeight = 50;
+const statusHeight = isIPX?44:20;
+const headerHeight = statusHeight + 44;
 
 //npm install react-native-syan-image-picker --save
 
@@ -68,7 +70,7 @@ class LocationView extends Component{
         for(var i=index ; i<this.state.componentsHeightValue.length ; i++ ){
             h+=this.state.componentsHeightValue[i]
         }
-        if(h > screenHeight-50-64){
+        if(h > screenHeight-bottomTapHeight-headerHeight){
             this.refs.scroll.scrollTo({x: 0, y: this.state.componentsYValue[index], animated: true})
         }else{
             this.refs.scroll.scrollToEnd()

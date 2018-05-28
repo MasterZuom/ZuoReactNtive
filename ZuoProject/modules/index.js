@@ -5,4 +5,4 @@ import PhoneView from './demo/PhoneView'
 import LocationView from './demo/LocationView'
 import ExchangeRecord from './demo/ExchangeRecord'
 
-export default ExchangeRecord
+export default KeyBoard

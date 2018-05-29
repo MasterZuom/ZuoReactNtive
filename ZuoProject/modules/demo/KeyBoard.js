@@ -169,13 +169,18 @@ export default class App extends Component {
         var commentView = null
         if(this.state.showComment){
             commentView = (
-                <TouchableOpacity
-                    style={{backgroundColor:'rgba(0,0,0,0.3)',height:SCREEN_HEIGHT,width:SCREEN_WIDTH,position:'absolute'}}
-                    onPress={()=>{
-                        this.setState({showComment:false})
-                    }}
-                >
+                <View style={{backgroundColor:'rgba(0,0,0,0.5)',height:SCREEN_HEIGHT,width:SCREEN_WIDTH,position:'absolute'}}>
                     <View style={{backgroundColor:'#fff',zIndex:100,width:'100%',position:'absolute',padding:10,bottom:this.state.keyboardHeight}}>
+                        <View style={{height:25}}>
+                            <TouchableOpacity
+                                style={{position:'absolute',right:0,top:0,paddingRight:5,paddingLeft:10,paddingBottom:5}}
+                                onPress={()=>{
+                                    this.setState({showComment:false})
+                                }}
+                            >
+                                <Text>关闭</Text>
+                            </TouchableOpacity>
+                        </View>
                         <View style={{padding:10,flexDirection:'row',alignItems:'center'}}>
                             <Text>评分:</Text>
                             {this.getGradeButton(1)}
@@ -220,7 +225,7 @@ export default class App extends Component {
                             {this.getPhotos()}
                         </View>
                     </View>
-                </TouchableOpacity>
+                </View>
             )
         }
 
@@ -274,7 +279,8 @@ let styles = StyleSheet.create({
       alignItems:'center',
       borderWidth:1,
       borderColor:'#e5e5e5',
-      borderRadius:4
+      borderRadius:4,
+      marginLeft:5
     },
     addicon:{
       width:20,

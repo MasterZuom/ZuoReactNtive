@@ -35,12 +35,19 @@
 		2D16E6881FA4F8E400B85C8A /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D16E6891FA4F8E400B85C8A /* libReact.a */; };
 		2DCD954D1E0B4F2C00145EB5 /* ZuoProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* ZuoProjectTests.m */; };
 		2DF0FFEE2056DD460020B375 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3EA31DF850E9000B6D8A /* libReact.a */; };
+		4A2029B8E3EAF2E64062FF94 /* libPods-ZuoProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 36FA4A2B2C4C41988E93238F /* libPods-ZuoProject.a */; };
 		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
 		E57435D6209C391800383C61 /* libRNSyanImagePicker.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E57435D3209C38EE00383C61 /* libRNSyanImagePicker.a */; };
 		E5743639209C550600383C61 /* TZImagePickerController.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E5743638209C550600383C61 /* TZImagePickerController.bundle */; };
+		E5A6066020DB5B8700C13640 /* DGAudioController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5A6062C20DB5B8700C13640 /* DGAudioController.m */; };
+		E5A6066120DB5B8700C13640 /* DGAudio.m in Sources */ = {isa = PBXBuildFile; fileRef = E5A6062F20DB5B8700C13640 /* DGAudio.m */; };
+		E5A6066220DB5B8700C13640 /* MusicSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = E5A6063220DB5B8700C13640 /* MusicSlider.m */; };
+		E5A6066320DB5B8700C13640 /* NSString+URL.m in Sources */ = {isa = PBXBuildFile; fileRef = E5A6063520DB5B8700C13640 /* NSString+URL.m */; };
+		E5A6066420DB5B8700C13640 /* NSString+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = E5A6063620DB5B8700C13640 /* NSString+Additions.m */; };
 		E5BF370020A5964C00C8CF36 /* libRCTCameraRoll.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E5BF36DE20A5963800C8CF36 /* libRCTCameraRoll.a */; };
+		E5F82B3020E4B52B00100979 /* MyRNUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = E5F82B2F20E4B52B00100979 /* MyRNUtils.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -356,13 +363,28 @@
 		2D02E47B1E0B4A5D006451C7 /* ZuoProject-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ZuoProject-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* ZuoProject-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ZuoProject-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D16E6891FA4F8E400B85C8A /* libReact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libReact.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		36FA4A2B2C4C41988E93238F /* libPods-ZuoProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZuoProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
+		6330983984105F8B64873412 /* Pods-ZuoProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZuoProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZuoProject/Pods-ZuoProject.debug.xcconfig"; sourceTree = "<group>"; };
+		6D1F64FDAE28CBC566C95DD9 /* Pods-ZuoProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZuoProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZuoProject/Pods-ZuoProject.release.xcconfig"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
 		E57435A9209C38EE00383C61 /* RNSyanImagePicker.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNSyanImagePicker.xcodeproj; path = "../node_modules/react-native-syan-image-picker/ios/RNSyanImagePicker.xcodeproj"; sourceTree = "<group>"; };
 		E5743638209C550600383C61 /* TZImagePickerController.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TZImagePickerController.bundle; path = "../node_modules/react-native-syan-image-picker/ios/TZImagePickerController/TZImagePickerController.bundle"; sourceTree = "<group>"; };
+		E5A6062C20DB5B8700C13640 /* DGAudioController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DGAudioController.m; sourceTree = "<group>"; };
+		E5A6062D20DB5B8700C13640 /* DGAudioController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGAudioController.h; sourceTree = "<group>"; };
+		E5A6062F20DB5B8700C13640 /* DGAudio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DGAudio.m; sourceTree = "<group>"; };
+		E5A6063020DB5B8700C13640 /* DGAudio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGAudio.h; sourceTree = "<group>"; };
+		E5A6063220DB5B8700C13640 /* MusicSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicSlider.m; sourceTree = "<group>"; };
+		E5A6063320DB5B8700C13640 /* MusicSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicSlider.h; sourceTree = "<group>"; };
+		E5A6063520DB5B8700C13640 /* NSString+URL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+URL.m"; sourceTree = "<group>"; };
+		E5A6063620DB5B8700C13640 /* NSString+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Additions.m"; sourceTree = "<group>"; };
+		E5A6063720DB5B8700C13640 /* NSString+URL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+URL.h"; sourceTree = "<group>"; };
+		E5A6063820DB5B8700C13640 /* NSString+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Additions.h"; sourceTree = "<group>"; };
 		E5BF36D420A5963800C8CF36 /* RCTCameraRoll.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTCameraRoll.xcodeproj; path = "../node_modules/react-native/Libraries/CameraRoll/RCTCameraRoll.xcodeproj"; sourceTree = "<group>"; };
+		E5F82B2E20E4B52B00100979 /* MyRNUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyRNUtils.h; sourceTree = "<group>"; };
+		E5F82B2F20E4B52B00100979 /* MyRNUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyRNUtils.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -393,6 +415,7 @@
 				832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */,
 				00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */,
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
+				4A2029B8E3EAF2E64062FF94 /* libPods-ZuoProject.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -504,9 +527,12 @@
 		13B07FAE1A68108700A75B9A /* ZuoProject */ = {
 			isa = PBXGroup;
 			children = (
+				E5A6062A20DB5B8700C13640 /* Audio */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
+				E5F82B2E20E4B52B00100979 /* MyRNUtils.h */,
+				E5F82B2F20E4B52B00100979 /* MyRNUtils.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
@@ -542,8 +568,18 @@
 			isa = PBXGroup;
 			children = (
 				2D16E6891FA4F8E400B85C8A /* libReact.a */,
+				36FA4A2B2C4C41988E93238F /* libPods-ZuoProject.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		39477B25FAEBFC3D2510C8E2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6330983984105F8B64873412 /* Pods-ZuoProject.debug.xcconfig */,
+				6D1F64FDAE28CBC566C95DD9 /* Pods-ZuoProject.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		5E91572E1DD0AC6500FF2AA8 /* Products */ = {
@@ -603,6 +639,7 @@
 				00E356EF1AD99517003FC87E /* ZuoProjectTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
+				39477B25FAEBFC3D2510C8E2 /* Pods */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -635,6 +672,56 @@
 				E57435D3209C38EE00383C61 /* libRNSyanImagePicker.a */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		E5A6062A20DB5B8700C13640 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				E5A6062B20DB5B8700C13640 /* Controller */,
+				E5A6062E20DB5B8700C13640 /* Model */,
+				E5A6063120DB5B8700C13640 /* View */,
+				E5A6063420DB5B8700C13640 /* Tool */,
+			);
+			name = Audio;
+			path = ZuoProject/Audio;
+			sourceTree = "<group>";
+		};
+		E5A6062B20DB5B8700C13640 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E5A6062D20DB5B8700C13640 /* DGAudioController.h */,
+				E5A6062C20DB5B8700C13640 /* DGAudioController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E5A6062E20DB5B8700C13640 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E5A6062F20DB5B8700C13640 /* DGAudio.m */,
+				E5A6063020DB5B8700C13640 /* DGAudio.h */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E5A6063120DB5B8700C13640 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E5A6063220DB5B8700C13640 /* MusicSlider.m */,
+				E5A6063320DB5B8700C13640 /* MusicSlider.h */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E5A6063420DB5B8700C13640 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				E5A6063520DB5B8700C13640 /* NSString+URL.m */,
+				E5A6063620DB5B8700C13640 /* NSString+Additions.m */,
+				E5A6063720DB5B8700C13640 /* NSString+URL.h */,
+				E5A6063820DB5B8700C13640 /* NSString+Additions.h */,
+			);
+			path = Tool;
 			sourceTree = "<group>";
 		};
 		E5BF36D520A5963800C8CF36 /* Products */ = {
@@ -670,10 +757,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "ZuoProject" */;
 			buildPhases = (
+				43F64D5378B2F1F312105CA4 /* [CP] Check Pods Manifest.lock */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				BB665ACCAF932D994FD4F1DE /* [CP] Embed Pods Frameworks */,
+				ED7F5273C4A5E1E0E270C474 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1163,6 +1253,54 @@
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
 		};
+		43F64D5378B2F1F312105CA4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZuoProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB665ACCAF932D994FD4F1DE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZuoProject/Pods-ZuoProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED7F5273C4A5E1E0E270C474 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZuoProject/Pods-ZuoProject-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -1178,6 +1316,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5A6066420DB5B8700C13640 /* NSString+Additions.m in Sources */,
+				E5A6066220DB5B8700C13640 /* MusicSlider.m in Sources */,
+				E5A6066320DB5B8700C13640 /* NSString+URL.m in Sources */,
+				E5A6066020DB5B8700C13640 /* DGAudioController.m in Sources */,
+				E5A6066120DB5B8700C13640 /* DGAudio.m in Sources */,
+				E5F82B3020E4B52B00100979 /* MyRNUtils.m in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
@@ -1267,6 +1411,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6330983984105F8B64873412 /* Pods-ZuoProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1285,6 +1430,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D1F64FDAE28CBC566C95DD9 /* Pods-ZuoProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;

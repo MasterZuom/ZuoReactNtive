@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>BootStrap demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+</head>
+
+<style>
+    html, body {
+        position: relative;
+        height: 100%;
+    }
+    body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color:#000;
+        margin: 0;
+        padding: 0;
+    }
+    .wraper{
+        background-color: #fff;
+        width: 100%;
+        height: 100%;
+    }
+    .title{
+        margin-top: 20px;
+        text-align: center;
+    }
+</style>
+
+<body>
+
+    <div class="wraper">
+        <div class="title">哈哈</div>
+        <div class="form-group has-success has-feedback">
+            <label class="control-label" for="inputSuccess2">Input with success</label>
+            <input type="text" class="form-control" id="inputSuccess2" aria-describedby="inputSuccess2Status">
+            <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+            <span id="inputSuccess2Status" class="sr-only">(success)</span>
+        </div>
+        <button type="button" class="btn btn-lg btn-primary" disabled="disabled">Primary button</button>
+        <button type="button" class="btn btn-default btn-lg" disabled="disabled">Button</button>
+        <a href="#" class="btn btn-default btn-lg active" role="button">Link</a>
+        <button type="button" class="btn btn-default btn-lg" style="border-color: #ccc;">（大按钮）Large button</button>
+
+    </div>
+
+    <script src="./js/bootstrap.min.js"></script>
+    <script>
+
+    </script>
+</body>
+</html>

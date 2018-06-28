@@ -5,5 +5,7 @@ import PhoneView from './demo/PhoneView'
 import LocationView from './demo/LocationView'
 import ExchangeRecord from './demo/ExchangeRecord'
 import Audio from './demo/Audio'
+import WebviewDemo from './demo/WebviewDemo'
+import BootStrapDemo from './demo/BootStrapDemo'
 
-export default Audio
+export default BootStrapDemo

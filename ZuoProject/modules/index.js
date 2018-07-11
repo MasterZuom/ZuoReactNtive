@@ -8,4 +8,4 @@ import Audio from './demo/Audio'
 import WebviewDemo from './demo/WebviewDemo'
 import BootStrapDemo from './demo/BootStrapDemo'
 
-export default BootStrapDemo
+export default WebviewDemo

@@ -25,6 +25,7 @@ const SCREEN_WIDTH = Dimensions.get('window').width;
 const SCREEN_HEIGHT = Dimensions.get('window').height;
 import SYImagePicker from 'react-native-syan-image-picker'
 
+
 export default class App extends Component {
     constructor(props){
         super(props)
@@ -62,9 +63,9 @@ export default class App extends Component {
 
     _keyboardDidHide(e){
         this.key=e.startCoordinates.height;
-        this.setState({
-            showComment:false
-        })
+        // this.setState({
+        //     showComment:false
+        // })
     }
 
     getGradeButton(index){
@@ -87,6 +88,9 @@ export default class App extends Component {
                 onPress={()=>{
                     this.setState({
                         grade:index+1
+                    })
+                    this.setState({
+                        inputString:this.state.inputString + '👌'
                     })
                 }}
             >
@@ -175,7 +179,8 @@ export default class App extends Component {
                             <TouchableOpacity
                                 style={{position:'absolute',right:0,top:0,paddingRight:5,paddingLeft:10,paddingBottom:5}}
                                 onPress={()=>{
-                                    this.setState({showComment:false})
+                                    //this.setState({showComment:false})
+                                    Keyboard.dismiss()
                                 }}
                             >
                                 <Text>关闭</Text>
@@ -202,6 +207,7 @@ export default class App extends Component {
                         <View style={styles.inputWraper}>
                             <TextInput
                                 defaultValue={this.state.inputString}
+                                value={this.state.inputString}
                                 style={styles.input}
                                 multiline={true}
                                 blurOnSubmit={true}
@@ -241,6 +247,7 @@ export default class App extends Component {
                 >
                     <Text>出来</Text>
                 </TouchableOpacity>
+
                 {commentView}
             </View>
         )
